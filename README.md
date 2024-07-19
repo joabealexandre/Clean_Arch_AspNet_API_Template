@@ -10,12 +10,13 @@ We are using:
 ### Prerequisites
 
 Before trying to run the project locally, make sure you install the following:
+
 - .NET 8 SDK
 - Visual Studio Code
 
 #### VS Code Extensions
 
-[C# ](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)[Required]
+[C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) [Required]
 
 ### Running Locally
 
@@ -28,16 +29,19 @@ Alternatively you can generate the tasks.json and launch.json files with these s
 Select Run and Debug on the side bar (or press Ctrl + Shift + D)
 Click create a launch.json file
 Select environment: .NET Core
+
 #### Running
 
 Launch the app in debug mode by selecting Run -> Start Debugging (or by pressing F5).
 
+### Todo Use Cases 
+
+As a sample, we have some Use Cases that handle Todos requests. It's only for reference about how to implement code.
 
 ### Technologies
 
-* [MediatR](https://github.com/jbogard/MediatR)
-* [FluentValidation](https://github.com/FluentValidation)
-
+- [MediatR](https://github.com/jbogard/MediatR)
+- [FluentValidation](https://github.com/FluentValidation)
 
 ### References
 
