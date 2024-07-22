@@ -25,6 +25,10 @@ We use PostgreSQL as relational database. Update connection string in `appsettin
 
 As a sample, we have some Use Cases that handle Todos requests. It's only for reference about how to implement code.
 
+### Docker
+
+To run with Docker, build a new image with Dockerfile located in this directory. Make sure the project name is correct in the Dockerfile.
+
 ### Tests
 
 We are using xUnit as test library. The tests projects can be created following the pattern `<project-name>.<type>`. For example:
@@ -40,6 +44,7 @@ We are using xUnit as test library. The tests projects can be created following 
 - [MediatR](https://github.com/jbogard/MediatR)
 - [FluentValidation](https://github.com/FluentValidation)
 - [XUnit](https://xunit.net/)
+- [Moq]()
 
 ### References
 
