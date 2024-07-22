@@ -25,12 +25,21 @@ We use PostgreSQL as relational database. Update connection string in `appsettin
 
 As a sample, we have some Use Cases that handle Todos requests. It's only for reference about how to implement code.
 
+### Tests
+
+We are using xUnit as test library. The tests projects can be created following the pattern `<project-name>.<type>`. For example:
+
+- CleanArchApi.Application.UnitTests
+- CleanArchApi.Application.IntegrationTests
+- CleanArchApi.Domain.UnitTests
+
 ### Technologies
 
 - ASP.NET 8 _#TODO_
 - Entity Framework _#TODO_
 - [MediatR](https://github.com/jbogard/MediatR)
 - [FluentValidation](https://github.com/FluentValidation)
+- [XUnit](https://xunit.net/)
 
 ### References
 
