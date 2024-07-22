@@ -2,44 +2,33 @@
 
 This is my Clean Architecure API with ASP.NET Core template.
 
-We are using:
-
-- .NET 8
-- EF Core
-
-### Prerequisites
+## Prerequisites
 
 Before trying to run the project locally, make sure you install the following:
 
 - .NET 8 SDK
 - Visual Studio Code
 
-#### VS Code Extensions
+### VS Code Extensions
 
 [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) [Required]
 
 ### Running Locally
 
-#### Generating assets
-
-After opening the project in VS Code you should see a popup alert from the C# extension with the message - Required assets to build and debug are missing from 'VAR'. Add them? - click Yes to automatically generate the launch.json and tasks.json files in the .vscode folder with the required configuration to build and debug the project.
-
-Alternatively you can generate the tasks.json and launch.json files with these steps:
-
-Select Run and Debug on the side bar (or press Ctrl + Shift + D)
-Click create a launch.json file
-Select environment: .NET Core
-
-#### Running
-
 Launch the app in debug mode by selecting Run -> Start Debugging (or by pressing F5).
 
-### Todo Use Cases 
+### Database
+
+We use PostgreSQL as relational database. Update connection string in `appsettings.json` file.
+
+### Todo Use Cases
 
 As a sample, we have some Use Cases that handle Todos requests. It's only for reference about how to implement code.
 
 ### Technologies
 
+- ASP.NET 8 _#TODO_
+- Entity Framework _#TODO_
 - [MediatR](https://github.com/jbogard/MediatR)
 - [FluentValidation](https://github.com/FluentValidation)
 
