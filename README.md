@@ -6,7 +6,7 @@ This is my Clean Architecure API with ASP.NET Core template.
 
 Before trying to run the project locally, make sure you install the following:
 
-- .NET 8 SDK
+- .NET 10 RC1 SDK
 - Visual Studio Code
 
 ### VS Code Extensions
@@ -39,7 +39,7 @@ We are using xUnit as test library. The tests projects can be created following 
 
 ### Technologies
 
-- ASP.NET 8 _#TODO_
+- ASP.NET 10 _#TODO_
 - Entity Framework _#TODO_
 - [MediatR](https://github.com/jbogard/MediatR)
 - [FluentValidation](https://github.com/FluentValidation)
