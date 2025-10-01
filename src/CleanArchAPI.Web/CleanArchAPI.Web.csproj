@@ -3,6 +3,7 @@
   <ItemGroup>
     <PackageReference Include="mediatR" />
     <PackageReference Include="Swashbuckle.AspNetCore" />
+    <PackageReference Include="WolverineFx" />
   </ItemGroup>
 
   <ItemGroup>

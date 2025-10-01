@@ -1,53 +1,137 @@
-# Clean Arch API
+# Clean Architecture API Template
 
-This is my Clean Architecure API with ASP.NET Core template.
+A .NET 10 REST API template following Clean Architecture principles, designed to accelerate the development of well-structured ASP.NET Core APIs.
+
+## Overview
+
+This template provides a solid foundation for building REST APIs with Clean Architecture, ensuring separation of concerns, testability, and maintainability from the start.
 
 ## Prerequisites
 
-Before trying to run the project locally, make sure you install the following:
+- [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) or later
 
-- .NET 10 RC1 SDK
-- Visual Studio Code
+## Installation
 
-### VS Code Extensions
+### Step 1: Clone the Repository
 
-[C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) [Required]
+Since this is a private template, you'll need to clone the repository first:
 
-### Running Locally
+```bash
+git clone https://github.com/joabealexandre/Clean_Arch_AspNet_API_Template.git
+cd Clean_Arch_AspNet_API_Template
+```
 
-Launch the app in debug mode by selecting Run -> Start Debugging (or by pressing F5).
+### Step 2: Install the Template
 
-### Database
+Install the template locally using the .NET CLI:
 
-We use PostgreSQL as relational database. Update connection string in `appsettings.json` file.
+```bash
+dotnet new install .
+```
 
-### Todo Use Cases
+To verify the installation, list all installed templates:
 
-As a sample, we have some Use Cases that handle Todos requests. It's only for reference about how to implement code.
+```bash
+dotnet new list
+```
 
-### Docker
+You should see **Clean Architecture API** with the short name **clean-arch-api** in the list.
 
-To run with Docker, build a new image with Dockerfile located in this directory. Make sure the project name is correct in the Dockerfile.
+## Usage
 
-### Tests
+### Creating a New Project
 
-We are using xUnit as test library. The tests projects can be created following the pattern `<project-name>.<type>`. For example:
+Navigate to the directory where you want to create your new project and run:
 
-- CleanArchApi.Application.UnitTests
-- CleanArchApi.Application.IntegrationTests
-- CleanArchApi.Domain.UnitTests
+```bash
+dotnet new clean-arch-api -n YourProjectName
+```
 
-### Technologies
+This will create a new solution with the Clean Architecture structure using your specified project name.
 
-- ASP.NET 10 _#TODO_
-- Entity Framework _#TODO_
-- [MediatR](https://github.com/jbogard/MediatR)
-- [FluentValidation](https://github.com/FluentValidation)
-- [XUnit](https://xunit.net/)
-- [Moq]()
+### Example Commands
 
-### References
+**Create a project named "TaskManager":**
+```bash
+dotnet new clean-arch-api -n TaskManager
+```
 
-- [jasontaylordev](https://github.com/jasontaylordev/CleanArchitecture/tree/main)
-- [ardalis](https://github.com/ardalis/CleanArchitecture/tree/main)
-- [Debugging](https://jasonwatmore.com/post/2021/06/24/vs-code-net-debug-a-net-web-app-in-visual-studio-code)
+**Create a project in a specific directory:**
+```bash
+dotnet new clean-arch-api -n ECommerce -o ./src/ECommerce
+```
+
+**Create a project in the current directory:**
+```bash
+mkdir MyAwesomeAPI
+cd MyAwesomeAPI
+dotnet new clean-arch-api -n MyAwesomeAPI
+```
+
+### Post-Creation Steps
+
+After generating your project:
+
+1. **Navigate to the project directory:**
+   ```bash
+   cd YourProjectName
+   ```
+
+2. **Restore NuGet packages:**
+   ```bash
+   dotnet restore
+   ```
+
+3. **Build the solution:**
+   ```bash
+   dotnet build
+   ```
+
+4. **Run the API:**
+   ```bash
+   dotnet run --project src/YourProjectName.API
+   ```
+
+## Template Information
+
+- **Author:** Joabe Leite
+- **Classifications:** Web, ASP.NET, Clean Architecture, API
+- **Language:** C#
+- **Type:** Project Template
+
+## Uninstalling the Template
+
+If you need to remove the template:
+
+```bash
+dotnet new uninstall Clean.Arch.API
+```
+
+Or specify the full path where you installed it from:
+
+```bash
+dotnet new uninstall /path/to/Clean_Arch_AspNet_API_Template
+```
+
+## Updating the Template
+
+To update to the latest version:
+
+1. Pull the latest changes from the repository:
+   ```bash
+   cd /path/to/Clean_Arch_AspNet_API_Template
+   git pull origin main
+   ```
+
+2. Reinstall the template:
+   ```bash
+   dotnet new install . --force
+   ```
+
+## Support
+
+For issues, questions, or contributions, please visit the [GitHub repository](https://github.com/joabealexandre/Clean_Arch_AspNet_API_Template).
+
+## License
+
+Please refer to the LICENSE file in the repository for licensing information.

@@ -1,5 +1,6 @@
 using CleanArchAPI.Application;
 using CleanArchAPI.Infrastructure;
+using Wolverine;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,13 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices(builder.Configuration);
+
+builder.Host.UseWolverine(opts =>
+{
+    opts.Discovery.IncludeAssembly(typeof(Program).Assembly);
+    opts.Discovery.IncludeAssembly(typeof(CleanArchAPI.Application.UseCases.Card.Create.CreateCardCommand).Assembly);
+    opts.Durability.Mode = DurabilityMode.MediatorOnly;
+});
 
 var app = builder.Build();
 

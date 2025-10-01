@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CleanArchAPI.Infrastructure.Data.Configuration
 {
-    public class ToDoConfiguration : IEntityTypeConfiguration<ToDo>
+    public class CardConfiguration : IEntityTypeConfiguration<Card>
     {
-        public void Configure(EntityTypeBuilder<ToDo> builder)
+        public void Configure(EntityTypeBuilder<Card> builder)
         {
-            builder.ToTable("to_do");
+            builder.ToTable("card");
 
             builder.HasKey(p => p.Id)
                 .HasName("id_pkey");

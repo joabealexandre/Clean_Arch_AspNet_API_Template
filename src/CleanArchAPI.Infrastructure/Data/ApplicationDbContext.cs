@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CleanArchAPI.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
 namespace CleanArchAPI.Infrastructure.Data
@@ -8,6 +9,8 @@ namespace CleanArchAPI.Infrastructure.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
+
+        public DbSet<Card> Cards { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

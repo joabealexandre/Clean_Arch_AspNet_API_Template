@@ -1,10 +1,10 @@
 ﻿using FluentValidation;
 
-namespace CleanArchAPI.Application.UseCases.Todos.Create
+namespace CleanArchAPI.Application.UseCases.Card.Create
 {
-    public class CreateTodoCommandValidator : AbstractValidator<CreateTodoCommand>
+    public class CreateCardValidator : AbstractValidator<CreateCardCommand>
     {
-        public CreateTodoCommandValidator()
+        public CreateCardValidator()
         {
             RuleFor(t => t.Title)
                 .NotEmpty()
